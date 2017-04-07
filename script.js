@@ -59,3 +59,4 @@ boxes[1].addEventListener("click", box2Clicked);
 boxes[2].addEventListener("click", box3Clicked);
 boxes[3].addEventListener("dblclick", box4Clicked);
 boxes[4].addEventListener("click", box5Clicked);
+ 

@@ -12,42 +12,32 @@ boxes[4].style.backgroundColor = "default"
 
 
 var leftMargin = 0;
+var leftMargin1 = 0;
+var leftMargin2 = 0;
 
 var moveAmount = 5;
+var moveAmount1 = 10;
+var moveAmount2= 15;
+
 function boxClicked() {
     console.log("Hey, box clicked!");
-
-
-
-    if (leftMargin < 100) {
-        leftMargin += moveAmount;
-
-    }
     leftMargin += moveAmount;
-
-
     boxes[0].style.marginLeft = leftMargin + "px";
-
 }
-boxes[0].addEventListener("click", boxClicked);
-console.log(boxes[0]);
 
-
-var moveAmount = 10;
-function boxClicked() {
+function box2Clicked() {
     console.log("Hey, box clicked!");
-
-
-
-    if (leftMargin < 100) {
-        leftMargin += moveAmount;
-
-    }
-    leftMargin += moveAmount;
-
-
-    boxes[1].style.marginLeft = leftMargin + "px";
-
+    leftMargin1 += moveAmount1;
+    boxes[1].style.marginLeft = leftMargin1 + "px";
 }
-boxes[1].addEventListener("clickOne", boxClicked);
-console.log(boxes[1]);
+
+function box3Clicked() {
+    console.log("Hey, box clicked!");
+    leftMargin2 += moveAmount2;
+    boxes[2].style.marginLeft = leftMargin2 + "px";
+}
+
+boxes[0].addEventListener("click", boxClicked);
+boxes[1].addEventListener("click", box2Clicked);
+boxes[2].addEventListener("click", box3Clicked);
+
